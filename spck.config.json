@@ -3,7 +3,12 @@
     "type": "file",
     "task": "npm/build-dev",
     "tasks": {
-      "if": [["!exists", "dist/bundle.js"]],
+      "if": [
+        [
+          "!exists",
+          "dist/bundle.js"
+        ]
+      ],
       "then": "npm/install-dep"
     },
     "file": "dist/index.html",
